@@ -8,13 +8,13 @@ This project implements a scalable pipeline for crawling, deduplicating, process
 graph TD
     A[Start Pipeline] --> B{Scan Input Dir};
     B --> C[Video Files List];
-    C --> D{Calculate Hashes (Parallel)};
+    C --> D{Calculate Hashes};
     D --> E[Hash Results];
     E --> F{Identify Unique/Duplicates};
-    F -- Unique Videos --> G{Extract Metadata (Parallel)};
+    F -- Unique Videos --> G{Extract Metadata};
     F -- Duplicates --> H[Store Duplicate Map];
     G --> I[Metadata Results];
-    I --> J{Generate Labels (Parallel)};
+    I --> J{Generate Labels};
     J --> K[Labeled Data Results];
     K --> L{Save Results};
     L --> M[JSONL Output];
