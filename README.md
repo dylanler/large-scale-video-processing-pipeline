@@ -19,7 +19,7 @@ graph TD
     K --> L{Save Results};
     L --> M[JSONL Output];
     L --> N[CSV Output];
-    H --> L;  // Duplicate map is also saved at the end
+    H --> L;
     L --> Z[End Pipeline];
 
     subgraph Ingestion [src/ingestion.py]
