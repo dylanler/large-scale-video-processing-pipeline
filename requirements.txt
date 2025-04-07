@@ -1,0 +1,32 @@
+# Core libraries
+requests
+ffmpeg-python
+opencv-python-headless 
+numpy
+Pillow
+# Simple hashing for deduplication
+imagehash 
+# Orchestration (local)
+ray
+# Simple metadata storage
+pandas
+# Web crawling (optional for local test, can start simple)
+# scrapy 
+# Message Queue (optional for local test, can simulate)
+# redis
+# rq 
+
+# Embedding Model & Similarity Search (for advanced deduplication)
+sentence-transformers # For easy CLIP model access
+torch
+torchvision
+faiss-cpu # Or faiss-gpu if you have GPU and CUDA setup
+scikit-learn # For cosine_similarity 
+
+# AI Models for Labeling
+transformers
+torchaudio
+librosa # For audio processing
+accelerate # Recommended by transformers
+scipy
+timm # Often needed by transformer vision models
